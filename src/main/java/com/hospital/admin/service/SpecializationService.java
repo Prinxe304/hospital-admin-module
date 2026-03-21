@@ -18,4 +18,7 @@ public class SpecializationService {
     public List<Specialization> getAllSpecializations() {
         return repository.findAll();
     }
+    public Specialization saveSpecialization(Specialization specialization) {
+        return repository.save(specialization);
+    }
 }

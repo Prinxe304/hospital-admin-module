@@ -18,4 +18,8 @@ public class SpecializationController {
     public List<Specialization> getAllSpecializations() {
         return service.getAllSpecializations();
     }
+    @PostMapping("/specialization")
+    public Specialization addSpecialization(@RequestBody Specialization specialization) {
+        return service.saveSpecialization(specialization);
+    }
 }
